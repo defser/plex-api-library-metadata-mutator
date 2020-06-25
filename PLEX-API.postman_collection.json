@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "c36e7fbe-9dcc-4f96-a155-e1b5d1f498e7",
+		"name": "PLEX-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL MOVIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:32400/library/sections/1/all/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "32400",
+					"path": [
+						"library",
+						"sections",
+						"1",
+						"all",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL LIBRARIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:32400/library/sections/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "32400",
+					"path": [
+						"library",
+						"sections",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET SINGLE MOVIE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost32400/library/metadata/4098",
+					"protocol": "http",
+					"host": [
+						"localhost32400"
+					],
+					"path": [
+						"library",
+						"metadata",
+						"4098"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT SINGLE MOVIE METADATA",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:32400/library/metadata/4098?type=1&contentRating.value=Hardeschijf 1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "32400",
+					"path": [
+						"library",
+						"metadata",
+						"4098"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "1"
+						},
+						{
+							"key": "contentRating.value",
+							"value": "Hardeschijf 1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
